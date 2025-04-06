@@ -1,62 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Profile Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="profile-container">
-        <div class="profile-left">
-            <h1>Profile Card</h1>
-            <img src="john-doe.jpg" alt="John Doe">
+    <div class="profile-card">
+        <!--Profile Card-->
+        <div class="top-section">
+            <img src="john-doe.jpg" alt="John Doe" />
+            <div class="info">
+                <h2>John Doe</h2>
+                <h3>@johndoe | Software Engineer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus a erat vitae maximus.</p>
+            </div>
         </div>
-        <div class="profile-right">
-            <h2>John Doe</h2>
-            <h3>Software Engineer</h3>
-            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus a erat vitae maximus. Phasellus pellentesque accumsan erat eget accumsan. Aenean eget placerat lorem. Suspendisse vitae dictum nisl. Curabitur cursus libero ornare tellus mattis, nec vehicula nunc ullamcorper. Mauris ut bibendum urna. Vestibulum in dui justo. Morbi ultrices vitae purus et mattis.</em></p>
-            <strong>Email:</strong> <a href="">john.doe@example.com</a><br>
-            <strong>Phone:</strong> <a href="">+1234567890</a><br>
-            <strong>Location:</strong> Lutsk, Ukraine
-            
-            <h3>Skills:</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java</li>
-            </ul>
-            <h3>Social Media:</h3>
-            <ul>
-                <li><a href="">LinkedIn</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">GitHub</a></li>
-            </ul>
-            <h3>Education:</h3>
-            <table>
-                <tr>
-                    <th>Degree</th>
-                    <th>University</th>
-                    <th>Years</th>
-                </tr>
-                <tr>
-                    <td>Bachelor's Degree in Computer Science</td>
-                    <td>University of ABC</td>
-                    <td>2020-2024</td>
-                </tr>
-            </table>
-            <h3>Experience:</h3>
-            <p style="text-align: center;">&#128526 Software Engineer at Pear Company (2022-present)</p>
-            <h3>Contact Me:</h3>
-            <form class="contact-form">
-                <input placeholder="Your Name">
-                <input placeholder="Your Email">
-                <textarea rows="4" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send">
-            </form>
+        <!--Statistics-->
+        <div class="stats">
+            <div><h4>1373</h4><span>Followed By</span></div>
+            <div><h4>216</h4><span>Follows</span></div>
+            <div><h4>78</h4><span>Projects</span></div>
         </div>
+        <!--Email and Phone-->
+        <div class="contact-grid">
+            <div>
+                <div class="section-title">Email</div>
+                <a href="mailto:john.doe@example.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> john.doe@example.com
+                </a>
+            </div>
+            <div>
+                <div class="section-title">Phone</div>
+                <a href="tel:+1234567890" class="contact-button">
+                    <i class="fas fa-phone"></i> +1234567890
+                </a>
+            </div>
+        </div>
+        <!--Location-->
+        <div class="section-title">Location</div>
+        <div class="section-content">
+            <strong>Lutsk, Ukraine</strong> 
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163401.98669012248!2d24.9897162!3d50.7472334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997a2ce2e80d%3A0xc576b640a6a6310e!2sLutsk%2C%20Volyn%20Oblast%2C%20Ukraine!5e0!3m2!1sen!2sua!4v1712411760000!5m2!1sen!2sua">
+            </iframe>
+        </div>
+        <!--Skills-->
+        <div class="section-title" style="padding: 20px 0">Skills</div>
+        <div class="skills">
+            <div><img src="html-icon.png" alt="HTML"></div>
+            <div><img src="css-icon.png" alt="CSS"></div>
+            <div><img src="javascript-icon.png" alt="JavaScript"></div>
+            <div><img src="python-icon.png" alt="Python"></div>
+            <div><img src="java-icon.png" alt="Java"></div>
+        </div>
+        <!--Social Media-->
+        <div class="section-title" style="padding: 20px 0">Social Media</div>
+        <div class="social">
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="https://github.com/"><i class="fab fa-github"></i>GitHub</a>
+        </div>
+        <!--Education-->
+        <div class="section-title" style="padding-top: 15px;">Education</div>
+        <div class="education">
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-info">
+                    <h4>Bachelor's Degree in Computer Science</h4>
+                    <p>University of ABC</p>
+                    <span>2020–2024</span>
+                </div>
+            </div>
+        </div>
+        <!--Experience-->
+        <div class="section-title" style="padding-top: 15px;"> Experience:</div>
+        <div class="experience">😎 Software Engineer at Pear Company (2022–present)</div>
+        <!--Contact Me-->
+        <div class="section-title" style="padding-top: 15px;">Contact Me:</div>
+        <form class="contact-form">
+            <input placeholder="Your Name" />
+            <input placeholder="Your Email" />
+            <textarea rows="3" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+        </form>
     </div>
 </body>
 </html>
